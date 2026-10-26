@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="静读 - 一个简洁的中文在线小说阅读网站">
+  <title>静读 - 在线小说阅读</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="主导航">
+      <a class="logo" href="index.html">静读</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">书架</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="page-intro">
+        <h1>我的书架</h1>
+        <p class="page-subtitle">选一本书，开始一段安静的阅读时光。</p>
+      </section>
+
+      <div class="progress-card hidden" id="progress-card">
+        <p id="progress-text">阅读进度将显示在这里。</p>
+        <div class="progress-bar" aria-hidden="true">
+          <span id="progress-bar-fill" style="width: 0%"></span>
+        </div>
+        <p style="margin-top: 12px; margin-bottom: 0;">
+          <a id="continue-link" href="#">继续阅读</a>
+        </p>
+      </div>
+
+      <section class="bookshelf" id="bookshelf" aria-label="书架">
+        <p>正在加载书架...</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 静读。BiUH Web Technologies 课程作业。</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

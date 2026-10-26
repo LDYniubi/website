@@ -10,7 +10,7 @@ const books = [
   {
     id: 1,
     title: "灯塔守夜人",
-    author: "静读",
+    author: "LDY",
     synopsis: "一座悬崖边的老灯塔，一位沉默的守夜人伊莱亚斯，和一个从海上传来的信号。关于孤独、守望与重新出发的短篇小说。",
     coverGradient: "linear-gradient(135deg, #4a6fa5 0%, #2c4a6e 100%)",
     chapters: [
@@ -74,7 +74,7 @@ const books = [
   {
     id: 2,
     title: "雨夜书店",
-    author: "静读",
+    author: "LDY",
     synopsis: "城市角落有一家只在雨天开门的小书店。店主老周说，每一本书都在等一个特定的人。一个连绵雨季里，三个陌生人推门而入。",
     coverGradient: "linear-gradient(135deg, #5d4e6d 0%, #3d324a 100%)",
     chapters: [
@@ -113,7 +113,7 @@ const books = [
   {
     id: 3,
     title: "云端邮差",
-    author: "静读",
+    author: "LDY",
     synopsis: "在未来，纸质信件成了稀有物。阿云是最后一批云端邮差之一，他负责把无法通过电子网络送达的信，亲手送到收件人手中。",
     coverGradient: "linear-gradient(135deg, #4a7c59 0%, #2f4f3f 100%)",
     chapters: [

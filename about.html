@@ -22,36 +22,24 @@
 
   <main id="main-content">
     <div class="container">
-      <h1>关于静读</h1>
+      <h1>关于这个网站</h1>
 
       <section class="about-section">
-        <h2>这个网站</h2>
         <p>
-          静读是一个简洁的中文在线小说阅读网站。首页是书架，可以浏览多本书；点击书封进入书籍详情页，再选择开始阅读或查看目录。阅读页支持字号调节、主题切换和章节跳转。
+          静读是我为 BiUH Web Technologies 课程做的一个期末项目。我平时喜欢在网上看小说，所以想做一个简洁、干净的阅读网站，让自己和其他人都能安静地读故事。
         </p>
         <p>
-          网站使用纯 HTML、CSS 和 JavaScript 构建，没有引用任何外部框架或库，方便理解和修改。
+          网站的设计参考了一些常见的小说阅读应用：窄栏排版、首字下沉、段落缩进，还有夜间模式。功能上实现了书架、目录、章节翻页、字号调节和阅读进度记忆。
+        </p>
+        <p>
+          技术实现比较简单，用 HTML 搭建页面结构，CSS 负责样式和主题切换，JavaScript 处理章节数据和本地存储。所有内容都写在一个项目文件夹里，可以直接用浏览器打开，也可以部署到静态网站上。
         </p>
       </section>
 
       <section class="about-section">
-        <h2>技术要点</h2>
-        <ul>
-          <li><strong>语义化 HTML：</strong>使用正确的标题层级、landmark 和 ARIA 标签。</li>
-          <li><strong>响应式 CSS：</strong>针对手机和桌面屏幕做了适配。</li>
-          <li><strong>CSS 变量：</strong>浅色、暖色、深色三套主题共用一份样式表。</li>
-          <li><strong>渐进增强：</strong>没有 JavaScript 时页面仍能显示基本内容；开启 JavaScript 后增加主题记忆、字号调节和进度保存。</li>
-          <li><strong>可访问性：</strong>包含跳转链接、可见的焦点状态和键盘导航。</li>
-        </ul>
-      </section>
-
-      <section class="about-section">
-        <h2>如何换成你自己的内容</h2>
+        <h2>关于内容</h2>
         <p>
-          打开 <code>js/app.js</code>，找到顶部的 <code>books</code> 数组。每本书包含标题、作者、简介、封面渐变色和章节数组。你可以修改现有书籍，也可以按相同格式添加新书。
-        </p>
-        <p>
-          添加新书时，注意给它一个唯一的 <code>id</code>，并保证每本书内部的章节 <code>id</code> 从 1 开始连续递增。
+          目前书架上的三篇小说《灯塔守夜人》《雨夜书店》《云端邮差》都是我自己写的短篇。如果以后有时间，我会继续补充新的故事。
         </p>
         <div class="btn-group" style="margin-top: 20px;">
           <a class="btn" href="index.html">返回书架</a>

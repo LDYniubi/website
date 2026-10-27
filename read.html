@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="在静读上阅读小说章节">
+  <title>静读</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#chapter-content" class="skip-link">跳转到章节内容</a>
+
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="主导航">
+      <a class="logo" href="index.html">静读</a>
+      <ul class="nav-links">
+        <li><a href="index.html">书架</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article class="container">
+      <div class="reader-header">
+        <div>
+          <p style="margin: 0 0 6px; color: var(--muted-color); font-size: 0.9rem;">
+            <a href="index.html">书架</a> / <a id="book-link" href="#">书籍</a> / <a id="toc-link" href="#">目录</a>
+          </p>
+          <h1 class="chapter-title" id="chapter-title">正在加载章节...</h1>
+          <p class="chapter-subtitle" id="chapter-subtitle"></p>
+        </div>
+
+        <div class="reader-controls" aria-label="阅读控制">
+          <button id="font-decrease" type="button" aria-label="减小字号">A-</button>
+          <button id="font-reset" type="button" aria-label="重置字号">A</button>
+          <button id="font-increase" type="button" aria-label="增大字号">A+</button>
+          <button data-set-theme="light" type="button" aria-label="浅色主题">浅色</button>
+          <button data-set-theme="sepia" type="button" aria-label=" sepia 主题">暖色</button>
+          <button data-set-theme="dark" type="button" aria-label="深色主题">深色</button>
+        </div>
+      </div>
+
+      <div class="chapter-content" id="chapter-content">
+        <p>正在加载章节内容...</p>
+      </div>
+
+      <nav class="chapter-nav" aria-label="章节导航">
+        <a id="prev-chapter" href="#">← 上一章</a>
+        <a id="next-chapter" href="#">下一章 →</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>提示：按键盘左右方向键可快速翻章。</p>
+    <p>&copy; 2026 静读。BiUH Web Technologies 课程作业。</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

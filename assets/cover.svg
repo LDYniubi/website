@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f5f0e6"/>
+  <rect x="80" y="115" width="360" height="400" rx="16" fill="#3d4f53"/>
+  <path d="M140 155 C140 145 148 137 158 137 L260 137 L260 493 L158 493 C148 493 140 485 140 475 Z" fill="#fbf8f2"/>
+  <path d="M380 155 C380 145 372 137 362 137 L260 137 L260 493 L362 493 C372 493 380 485 380 475 Z" fill="#ede7db"/>
+  <line x1="260" y1="137" x2="260" y2="493" stroke="#c9bfa8" stroke-width="4"/>
+  <text x="540" y="260" font-family="Georgia, 'Noto Serif SC', serif" font-size="96" fill="#2c2c2c">静读</text>
+  <text x="540" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#5a5a5a">一个简洁的中文在线小说阅读网站</text>
+  <text x="540" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#7a7a7a">BiUH Web Technologies · 2026</text>
+</svg>

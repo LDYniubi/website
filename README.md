@@ -14,6 +14,8 @@
 - `css/style.css`：页面样式
 - `js/app.js`：数据与交互逻辑
 - `server.js`：本地预览服务器
+- `manifest.json`：PWA 配置文件
+- `assets/`：图标、封面与截图
 
 ## 本地运行
 

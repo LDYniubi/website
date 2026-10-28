@@ -1,0 +1,27 @@
+{
+  "name": "静读 - 在线小说阅读",
+  "short_name": "静读",
+  "description": "一个简洁的中文在线小说阅读网站",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#3d4f53",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

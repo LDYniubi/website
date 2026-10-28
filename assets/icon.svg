@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#3d4f53"/>
+  <path d="M112 128 C112 112 124 100 140 100 L256 100 L256 412 L140 412 C124 412 112 400 112 384 Z" fill="#f5f0e6"/>
+  <path d="M400 128 C400 112 388 100 372 100 L256 100 L256 412 L372 412 C388 412 400 400 400 384 Z" fill="#e8e0d1"/>
+  <line x1="256" y1="100" x2="256" y2="412" stroke="#c9bfa8" stroke-width="8"/>
+  <text x="256" y="468" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#f5f0e6">静读</text>
+</svg>

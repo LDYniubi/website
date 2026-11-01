@@ -7,11 +7,13 @@
 /* CSS Variables for theming */
 :root {
   --bg-color: #faf8f5;
+  --bg-gradient: linear-gradient(135deg, #faf8f5 0%, #f0ebe3 100%);
   --text-color: #2c2c2c;
   --muted-color: #6b6b6b;
   --accent-color: #2563eb;
   --accent-hover: #1d4ed8;
   --card-bg: #ffffff;
+  --card-bg-soft: #f8f6f2;
   --border-color: #e5e2dd;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   --font-body: Georgia, "Times New Roman", serif;
@@ -23,11 +25,13 @@
 /* Dark theme */
 [data-theme="dark"] {
   --bg-color: #1a1a1a;
+  --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #16181d 100%);
   --text-color: #e4e4e4;
   --muted-color: #a0a0a0;
   --accent-color: #60a5fa;
   --accent-hover: #3b82f6;
   --card-bg: #252525;
+  --card-bg-soft: #2a2a2a;
   --border-color: #3a3a3a;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -35,11 +39,13 @@
 /* Sepia theme */
 [data-theme="sepia"] {
   --bg-color: #f4ecd8;
+  --bg-gradient: linear-gradient(135deg, #f4ecd8 0%, #e8dcc0 100%);
   --text-color: #433422;
   --muted-color: #7a6a55;
   --accent-color: #9a5b26;
   --accent-hover: #7a451c;
   --card-bg: #faf5e8;
+  --card-bg-soft: #f5eedd;
   --border-color: #d9cfb5;
   --shadow: 0 2px 8px rgba(67, 52, 34, 0.08);
 }
@@ -57,7 +63,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-body);
-  background-color: var(--bg-color);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
   color: var(--text-color);
   line-height: var(--line-height);
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -66,6 +73,18 @@ body {
   flex-direction: column;
 }
 
+
+
+/* Subtle texture overlay for light theme */
+[data-theme="light"] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}
 /* Skip link for accessibility */
 .skip-link {
   position: absolute;
@@ -268,6 +287,8 @@ a:hover {
   padding: 16px 20px;
   margin-top: 24px;
   font-family: var(--font-ui);
+
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
 .progress-card.hidden {
@@ -430,6 +451,8 @@ a:hover {
   border-radius: 8px;
   padding: 28px;
   margin-bottom: 24px;
+
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
 }
 
 .about-section h2 {
@@ -486,6 +509,8 @@ a:hover {
 .book-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+
+  background-color: var(--card-bg-soft);
 }
 
 .book-card .book-cover {
